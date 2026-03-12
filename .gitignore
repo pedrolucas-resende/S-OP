@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/bigquery_client.cpython-314.pyc
+data/raw/output.csv
+data/raw/select_frota_atual.csv
+data/raw/select_contrato_dia.csv
+data/raw/tables_dm-mottu-aluguel.csv
