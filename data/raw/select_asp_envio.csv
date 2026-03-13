@@ -1,0 +1,11 @@
+lugar_id,filial,estado,estoque_atual,motos_prontas,motos_indisponiveis,motos_indisponiveis_paradas,demanda_planejada_quinz,data_ultimo_envio,Codigo_Transfer,motos_ultimo_envio,status_ultimo_envio,data_ultimo_envio_ongoing_ou_concluded,codigo_transfer_ultimo_envio_ongoing_ou_concluded,data_primeiro_pedido_pos_envio_30d,codigo_primeiro_pedido_pos_envio_30d,motos_primeiro_pedido_pos_envio_30d,status_primeiro_pedido_pos_envio_30d,dias_desde_primeiro_pedido_pos_envio_30d,ID_transfer_primeiro_pedido_waiting_30d,status_primeiro_pedido_waiting_30d,dias_desde_primeiro_pedido_waiting_30d,capacidade_total_teorica,estoque_minimo,estoque_alvo,dias_cobertura,status,urgencia,precisa_contra_frete,qtd_envio_recomendada
+317,Mottu Magé,RJ,27,20,7,2,43.55,2026-03-12,4199,10,WaitingForConfirmation,2026-03-10,4156,2026-03-12,4196,40,WaitingForConfirmation,1,4196,WaitingForConfirmation,1,60,18,60,6.9,PLANEJAR,BAIXA,NAO,40
+314,Mottu São João de Meriti,RJ,21,18,3,2,39.23,2026-03-10,4159,10,Concluded,2026-03-10,4159,,,,,,,,,59,16,59,6.9,PLANEJAR,BAIXA,NAO,40
+104,Mottu Taubaté,SP,32,12,20,11,23.78,2026-03-12,4201,10,WaitingForConfirmation,2026-03-06,4034,2026-03-09,4121,15,WaitingForConfirmation,4,4121,WaitingForConfirmation,4,57,10,43,7.6,PLANEJAR,BAIXA,NAO,25
+342,Mottu Angra dos Reis,RJ,5,1,4,3,5.55,2026-02-09,3498,5,Concluded,2026-02-09,3498,,,,,,,,,20,3,18,2.7,ENVIAR,URGENTE,SIM,20
+186,Mottu Rio Claro,SP,1,1,0,0,18.31,2026-03-09,4107,15,WaitingForConfirmation,2026-02-24,3827,2026-03-09,4059,10,WaitingForConfirmation,4,4059,WaitingForConfirmation,4,50,8,33,0.8,ENVIAR,URGENTE,NAO,20
+447,Mottu Belford Roxo,RJ,3,1,2,2,10.24,2026-03-10,4162,5,OnGoing,2026-03-10,4162,,,,,,,,,20,5,19,1.5,ENVIAR,URGENTE,SIM,15
+281,Mottu Bragança Paulista,SP,0,0,0,0,6.19,2026-03-02,3923,5,Concluded,2026-03-02,3923,,,,,,,,,20,3,13,0.0,ENVIAR,URGENTE,NAO,15
+336,Mottu Carpina,PE,10,5,5,3,12.34,2026-02-24,3842,10,Concluded,2026-02-24,3842,,,,,,,,,27,5,26,6.1,PLANEJAR,URGENTE,NAO,15
+331,Mottu Itaboraí - Bil Motos,RJ,2,1,1,0,12.21,2026-03-12,4198,10,WaitingForConfirmation,2026-02-13,3591,2026-03-12,4198,10,WaitingForConfirmation,1,4198,WaitingForConfirmation,1,22,5,22,1.2,ENVIAR,URGENTE,NAO,15
+414,Mottu Monte Alto,SP,2,2,0,0,8.47,2026-03-12,4186,2,OnGoing,2026-03-12,4186,,,,,,,,,30,4,16,3.5,ENVIAR,URGENTE,NAO,15
