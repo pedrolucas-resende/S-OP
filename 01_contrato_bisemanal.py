@@ -34,5 +34,5 @@ df = rodar_query(query_validacao)
 
 import os
 os.makedirs("data/raw", exist_ok=True)
-df.to_csv("data/raw/contratos_por_lugar_produto.csv", index=False)
-print("💾 Salvo em: data/raw/contratos_por_lugar_produto.csv")
+df.to_csv("data/raw/01_contratos_bisemanal.csv", index=False)
+print("💾 Salvo em: data/raw/01_contratos_bisemanal.csv")

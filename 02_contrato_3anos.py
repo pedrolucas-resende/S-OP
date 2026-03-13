@@ -16,5 +16,5 @@ df = rodar_query(query_validacao)
 
 import os
 os.makedirs("data/raw", exist_ok=True)
-df.to_csv("data/raw/vendas_3anos.csv", index=False)
-print("💾 Salvo em: data/raw/vendas_3anos.csv")
+df.to_csv("data/raw/02_vendas_3anos.csv", index=False)
+print("💾 Salvo em: data/raw/02_vendas_3anos.csv")
