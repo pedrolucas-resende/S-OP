@@ -79,19 +79,6 @@ Notebook completo de previsão de contratos para 8 semanas no futuro, com as seg
 
 O arquivo `requirements.txt` contém todas as dependências necessárias:
 
-```
-pandas≥1.3.0          # Manipulação de dados tabulares
-numpy≥1.20.0          # Computação numérica
-matplotlib≥3.4.0      # Criação de gráficos estáticos
-seaborn≥0.11.0        # Exemplos de plots com estilo
-scikit-learn≥1.0.0    # Modelos de machine learning (LinearRegression)
-statsmodels≥0.13.0    # Análise estatística avançada
-plotly≥5.0.0          # Gráficos interativos
-jupyter≥1.0.0         # Ambiente de notebooks
-ipykernel≥6.0.0       # Kernel Python para Jupyter
-google-cloud-bigquery≥3.0.0  # Cliente BigQuery
-```
-
 Para instalar:
 ```bash
 pip install -r requirements.txt
@@ -101,8 +88,18 @@ pip install -r requirements.txt
 
 ## 📊 Visualizações
 
-### TS Analysis
-![](data/processed/01_ts_analysis.png)
+### Notebook 01 - Previsão Bisemanal de Contratos
 
-### Forecast Comparison
-![](data/processed/02_forecast_comparison.png)
+**Time Series Analysis** - Tendências históricas das top 5 filiais por período bisemanal:
+![TS Analysis](data/processed/01_ts_analysis.png)
+
+**Forecast Comparison** - Comparação entre histórico e previsão de 8 períodos bisemanal com intervalos de confiança:
+![Forecast Comparison](data/processed/02_forecast_comparison.png)
+
+### Notebook 02 - Previsão de Vendas com Exponential Smoothing
+
+**Historical Sales** - Vendas históricas dos últimos 36 meses:
+![Historical Sales](data/processed/02_historical_sales.png)
+
+**Forecast Sales** - Previsão de vendas para os próximos 12 meses:
+![Forecast Sales](data/processed/02_forecast_sales.png)
