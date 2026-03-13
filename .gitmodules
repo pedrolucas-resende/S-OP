@@ -1,0 +1,6 @@
+[submodule "previsao-de-demanda-aluguel"]
+	path = previsao-de-demanda-aluguel
+	url = https://github.com/pedrolucas-resende/previsao-de-demanda-aluguel
+[submodule "metricas-de-mercado"]
+	path = metricas-de-mercado
+	url = https://github.com/pedrolucas-resende/metricas-de-mercado
