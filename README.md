@@ -1,4 +1,4 @@
-# mottu-previsao-demanda
+# mottu-previsao-contratos
 
 ## ⚙️ Como rodar o projeto
 
@@ -41,21 +41,9 @@ Este notebook realiza previsão de contratos novos (0km) para 8 semanas no futur
 utilizando regressão linear com intervalos de confiança estatísticos. Inclui análise exploratória, 
 validação do modelo (RMSE/MAE) e visualizações de tendências por filial.
 
-Para o notebook `02_exploracao.ipynb`:
-```bash
-python3 tabela-demanda.py
-# abra o notebook com o kernel python .venv
-```
-
-Para o notebook `03_exploracao_contratos.ipynb`:
-```bash
-python3 contratos_lugar_produtos.py
-# abra o notebook com o kernel python .venv
-```
-
 ---
 
-## � Scripts e Notebooks
+## Scripts e Notebooks
 
 ### `contratos_bisemanal.py` (NOVO)
 Extrai dados de contratos novos (0km) agregados em períodos bisemanal (a cada 2 semanas) diretamente 
@@ -69,7 +57,7 @@ geográficos (longitude e latitude) das filiais. Dataset de saída: `data/raw/co
 
 ---
 
-### `01_previsao_contratos.ipynb` (NOVO)
+### `01_previsao_contratos.ipynb`
 Notebook completo de previsão de contratos para 8 semanas no futuro, com as seguintes seções:
 
 1. **Load and Explore Data**: Carrega CSV, analisa estrutura, tipos de dados, valores faltantes
@@ -79,13 +67,6 @@ Notebook completo de previsão de contratos para 8 semanas no futuro, com as seg
 5. **Train Forecasting Models**: Treina modelo LinearRegression com split 80/20, calcula RMSE e MAE
 6. **Generate 8-Week Forecast**: Prevê próximos 8 períodos bisemanal com intervalos de confiança (±1.96σ)
 7. **Export Forecast Results**: Exporta resultados para CSV com colunas [lugar, periodo_bisemanal, predicted_contratos_novos, lower_bound, upper_bound], cria visualizações comparativas
-
-**Dependências:**
-- `pandas`, `numpy`: Manipulação de dados
-- `matplotlib`, `seaborn`, `plotly`: Visualizações
-- `scikit-learn`: Modelo de regressão linear
-- `statsmodels`: Análise estatística avançada
-- `jupyter`, `ipykernel`: Ambiente de notebook
 
 **Arquivos de saída:**
 - `data/processed/forecast_8semanas.csv`: Previsões com intervalos de confiança
@@ -118,37 +99,10 @@ pip install -r requirements.txt
 
 ---
 
-## �📊 Visualizações
+## 📊 Visualizações
 
-### Demanda Total
-![Demanda Total](data/raw/grafico_demanda_total.png)
+### TS Analysis
+![](data/processed/01_ts_analysis.png)
 
-### Contratos: Aluguel vs Venda
-![Contratos Aluguel vs Venda](data/raw/grafico_contratos_aluguel_venda.png)
-
-### Evolução dos Top 8
-![Evolução Top 8](data/raw/grafico_evolucao_top8.png)
-
-### Heatmap de Sazonalidade
-![Heatmap Sazonalidade](data/raw/grafico_heatmap_sazonalidade.png)
-
-### Mix por Tipo de Moto
-![Mix Tipo de Moto](data/raw/grafico_mix_tipo_moto.png)
-
-### MoM — Contratos
-![MoM Contratos](data/raw/grafico_mom_contratos.png)
-
-### MoM — Demanda
-![MoM Demanda](data/raw/grafico_mom.png)
-
-### Taxa de Renovação
-![Taxa de Renovação](data/raw/grafico_taxa_renovacao.png)
-
-### Distribuição por Tipo de Moto
-![Tipo de Moto](data/raw/grafico_tipo_moto.png)
-
-### Top Lugares
-![Top Lugares](data/raw/grafico_top_lugares.png)
-
-### Top Regiões
-![Top Regiões](data/raw/grafico_top_regioes.png)
+### Forecast Comparison
+![](data/processed/02_forecast_comparison.png)
